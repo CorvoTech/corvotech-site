@@ -1,29 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CorvoTech | IT Consulting</title>
+  <title>CorvoTech | Tactical IT Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #0d1117;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(-45deg, #0a0f17, #1f2d3d, #0a0f17);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
       color: #c9d1d9;
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
     }
-    h1 { font-size: 3rem; color: #58a6ff; }
-    p { font-size: 1.2rem; max-width: 500px; margin: 1em 0; }
-    a { color: #58a6ff; text-decoration: none; }
+
+    h1 {
+      font-size: 3rem;
+      color: #58a6ff;
+      margin-bottom: 0.5em;
+    }
+
+    h2 {
+      font-weight: 400;
+      opacity: 0.85;
+      max-width: 600px;
+      margin: 0 20px 2em;
+    }
+
+    .cta-button {
+      background: #58a6ff;
+      color: #0a0a0a;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #4ec9b0;
+      box-shadow: 0 0 10px #4ec9b0;
+    }
+
+    pre {
+      background: #121212;
+      padding: 16px;
+      border-radius: 6px;
+      color: #4ec9b0;
+      font-family: monospace;
+      max-width: 600px;
+      margin: 2em 20px;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
   </style>
 </head>
 <body>
   <h1>CorvoTech</h1>
-  <p>Veteran-owned IT consultancy focused on Microsoft 365, automation, and secure infrastructure.</p>
-  <p>📬 Reach out: <a href="mailto:michael@corvotech.us">michael@corvotech.us</a></p>
+  <h2>Precision IT. Tactical Automation. Veteran Engineered.</h2>
+  <a href="mailto:michael@corvotech.us" class="cta-button">Contact Me</a>
+  <pre>
+Initializing CorvoTech Systems...
+Authenticating...
+Status: ONLINE [✔]
+  </pre>
 </body>
 </html>
